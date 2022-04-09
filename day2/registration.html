@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .parent{
+            /* margin: auto; */
+            height: auto;
+            width: 100%;
+            padding: 2% 12%;
+            border: 1px solid black;
+            display: flex;
+            box-sizing: border-box;
+            background-color: white;
+        }
+        .child
+        {
+            padding: 30px;
+            margin: auto;
+            height: auto;
+            width: 40%;
+            /* display: grid; */
+            /* box-sizing: border-box; */
+            /* border: 1px solid teal; */
+        
+        }
+        #box{
+
+            /* border: 2px solid pink; */
+            background-color: black;
+            color: white;
+    
+        }
+        .child > div >label{
+            font-size: 25px;
+        }
+        .child >div>input{
+            border: 2px solid black;
+            height: 30px;
+            width: 80%;
+        }
+        #size{
+            font-size: 33px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+                <div>
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" name="name">
+                    <br>
+                    <br>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="text" name="email">
+                    <br>
+                    <br>
+                </div>
+                <div>
+                    <label for="mobile">Mobile</label>
+                    <br>
+                    <input type="text"  name="Mobile">
+                    <br>
+                    <br>
+                </div>
+                <div class="reg">
+                    <input style="background-color: black; text-align: center; border: 1px sloid black;" type="text" placeholder="REGISTER">
+                </div>
+        </div>
+        <div id="box" class="child">
+            <div>
+                <p style="line-height: 0px;">NAME</p>
+                <h2 id="size">PALLAV</h2>
+                <br>
+            </div>
+            <div>
+                <p style="line-height: 0px;">EMAIL</p>
+                <p style="font-size: 21px;">pallav@gmail.com</p>
+                <br>
+            </div>
+            <div>
+                <p style="line-height: 0px;">MOBILE</p>
+                <P style="font-size: 21px;">9876543210</P>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

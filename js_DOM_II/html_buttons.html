@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Buttons</title>
+    <style>
+        /* body{
+            margin: 0px;
+            padding: 0px;
+        } */
+        .container{
+            margin: auto;
+            width: 100%;
+            height: 100px;
+            /* background-color: rgb(28, 139, 237); */
+            display: grid;
+            grid-template-columns: repeat(9,1fr);
+            grid-template-rows: repeat(1,1fr);
+            align-items: center;
+            box-sizing: border-box;
+            padding: 20px 40px;
+
+        }
+        
+        .container>button{
+            border-radius: 5px;
+            border: none;
+            margin: 2px;
+            padding: 10px 5px;
+            font-size: 20px;
+        }
+        #btn1{
+            color: white;
+            background-color: rgb(77, 77, 202);
+        }
+        #btn2{
+            color: white;
+            background-color: gray;
+        }
+        #btn3{
+            color: white;
+            background-color: green;
+        }
+        #btn4{
+            color: white;
+            background-color: rgb(198, 35, 35);
+        }
+        #btn5{
+            color: black;
+            background-color: yellow;
+        }
+        #btn6{
+            color: white;
+            background-color: rgb(32, 138, 180);
+        }
+        #btn7{
+            color: black;
+            background-color: white;
+        }
+        #btn8{
+            color: white;
+            background-color: rgb(23, 23, 23);
+        }
+        #btn9{
+            color: rgb(75, 75, 196);
+            background-color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+            <button id="btn1">Primary</button>
+            <button id="btn2">Secondary</button>
+            <button id="btn3">Success</button>
+            <button id="btn4">Danger</button>
+            <button id="btn5">Warning</button>
+            <button id="btn6">Info</button>
+            <button id="btn7">Light</button>
+            <button id="btn8">Dark</button>
+            <button id="btn9">Link</button>
+    </div>
+</body>
+</html>

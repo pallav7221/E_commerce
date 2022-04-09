@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head{
+            text-align: center;
+            color: chocolate;
+            font-size: 50px; 
+        }
+        button{
+            background-color: rgb(17, 18, 18);
+            font-size: large;
+            color: rgb(248, 248, 250);
+            padding: 4px;
+            width: 80px;
+            border-radius: 5px;
+        }
+        *{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head"></h1>
+    <p></p>
+    <button id="likeBtn">Like</button>
+    <button id="unLikeBtn">UnLike</button>
+</body>
+<script>
+    document.querySelector("#likeBtn").addEventListener('click',counter);
+     document.querySelector("#unLikeBtn").addEventListener('click', counter1);
+    var count;
+    if(localStorage.getItem('count') == null){
+        document.querySelector('p').innerText= "counter is null";
+        count = 0;
+    }
+    else{
+        document.querySelector('p').innerText = "It is fine";
+        count = localStorage.getItem('count');
+    }
+    document.querySelector('h1').innerText = count;
+    function counter(){
+        count++;
+         localStorage.setItem('count', count);
+        document.getElementById('head').innerText = count;
+       
+    }
+    function counter1(){
+        count--;
+        localStorage.setItem('count', count);
+        document.getElementById('head').innerText=count;
+        
+    }
+    
+</script>
+</html>

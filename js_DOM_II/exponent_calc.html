@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exponent Calc</title>
+</head>
+
+<body>
+    <input id="num1" type="text" value placeholder="enter num 2">
+    <input id="num2" type="text" value placeholder="enter num 2">
+    <button onclick="multiply()">click</button>
+    <p id="ans">multiply</p>
+</body>
+<script>
+    function multiply() {
+        var a = document.getElementById("num1").value;
+        var b = document.getElementById("num2").value;
+        var ans = a * b;
+        document.getElementById("ans").innerText = ans;
+        var exp = 1;
+        for (var i = 1; i <= a; i++) {
+            exp = exp * b;
+        }
+        alert(exp);
+    }
+
+
+</script>
+
+</html>

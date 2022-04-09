@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 1</title>
+    <style>
+        .container {
+            height: auto;
+            width: 80%;
+            background-color: aqua;
+            margin: auto;
+            text-align: center;
+            padding: 10px; 
+            border: 2px solid black;
+        }
+        .container>div > h1{
+            color: red;
+        }
+        #gen{
+            margin: 10px;
+        }
+        #dob{
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- It should take the gender (dropdown) and year of birth as input and show an alert if the user is of the valid legal age
+    to get married or not -->
+    <div class="container">
+        <div>
+            <h1>Marriage Age Validater</h1>
+        </div>
+        <div>
+            <select name="Gender" id="gen">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Transgender">Transgender</option>
+            </select>
+            <input type="text" name="DOB" id="dob" placeholder="Enter Year">
+            <button onclick="showYear()">Check</button>
+        </div>
+    </div>
+</body>
+<script>
+    function showYear() {
+        var age = document.getElementById("dob").value;
+        console.log(age);
+        var valid = 2022 - age;
+        if (valid > 18) {
+            alert("valid for marriage " + valid);
+        }
+        else {
+            alert("Not valid for marrige" + valid);
+        }
+    }
+</script>
+
+</html>

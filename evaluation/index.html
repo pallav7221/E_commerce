@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            margin: auto;
+
+        }
+
+        body {
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .head {
+            text-align: center;
+
+        }
+
+        .top-section {
+            background-color: rgb(255, 250, 248);
+            width: 90%;
+            height: auto;
+            margin: auto;
+        }
+
+        .top-section>div+div {
+            width: auto;
+            height: auto;
+            display: flex;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        .top-section>div+div>div {
+            margin: auto;
+            line-height: 3px;
+        }
+
+        .top-section>div+div>div>p {
+            color: gray;
+        }
+
+
+        img {
+            height: 150px;
+            margin: auto;
+            padding: 5px;
+        }
+
+        .bottom {
+            margin: auto;
+            display: grid;
+            width: 90%;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            background-color: rgb(235, 244, 253);
+            text-align: center;
+            line-height: 20px;
+        }
+
+        .bottom>div {
+            height: auto;
+            margin: 4%;
+            padding: 0px 7px;
+            background-color: rgb(250, 248, 248);
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+
+        .bottom>div>img {
+            height: 50px;
+            width: 50px;
+        }
+
+        @media all and (min-width:80px) and (max-width:450px) {
+            .bottom {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+            }
+        }
+
+        @media all and (min-width:450px) and (max-width:850px) {
+            .bottom {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="top-section">
+            <div class="head">
+                <h2>Our Blog Posts</h2>
+            </div>
+            <div>
+                <div>
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.mooa8BwvKpO57AaSVKcSPQHaE7&pid=Api&P=0&w=306&h=204"
+                        alt="">
+                    <p class="float">29, January 2019</p>
+                    <h4>Architectural Art Morden</h4>
+                </div>
+                <div>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.5oka7Lt-Nym1pSfo1iRcJQHaE8&pid=Api&P=0&w=306&h=204"
+                        alt="">
+                    <p class="float">29, January 2019</p>
+                    <h4>Architectural Art Morden</h4>
+                </div>
+                <div>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.x8RXiab2a0zWJa_BQl1X2AHaE8&pid=Api&P=0&w=263&h=175"
+                        alt="">
+                    <p class="float">29, January 2019</p>
+                    <h4>Architectural Art Morden</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.iYsidp6LesFMfM0vpZl_kAHaFj&pid=Api&P=0&w=200&h=150" alt="">
+                <h2>Creative Design</h2>
+                <p>far far away,behind the word mountains, far from the countries Vokalia</p>
+            </div>
+            <div><img src="https://tse3.mm.bing.net/th?id=OIP.iYsidp6LesFMfM0vpZl_kAHaFj&pid=Api&P=0&w=200&h=150"
+                    alt="">
+                <h2>Digital Marketing</h2>
+                <p>far far away,behind the word mountains, far from the countries Vokalia</p>
+            </div>
+            <div><img src="https://tse3.mm.bing.net/th?id=OIP.iYsidp6LesFMfM0vpZl_kAHaFj&pid=Api&P=0&w=200&h=150"
+                    alt="">
+                <h2>Creative Design</h2>
+                <p>far far away,behind the word mountains, far from the countries Vokalia</p>
+            </div>
+            <div><img src="https://tse3.mm.bing.net/th?id=OIP.iYsidp6LesFMfM0vpZl_kAHaFj&pid=Api&P=0&w=200&h=150"
+                    alt="">
+                <h2>Creative Design</h2>
+                <p>far far away,behind the word mountains, far from the countries Vokalia</p>
+            </div>
+            <div><img src="https://tse3.mm.bing.net/th?id=OIP.iYsidp6LesFMfM0vpZl_kAHaFj&pid=Api&P=0&w=200&h=150"
+                    alt="">
+                <h2>Creative Design</h2>
+                <p>far far away,behind the word mountains, far from the countries Vokalia</p>
+            </div>
+            <div>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.iYsidp6LesFMfM0vpZl_kAHaFj&pid=Api&P=0&w=200&h=150" alt="">
+                <h2>Creative Design</h2>
+                <p>far far away,behind the word mountains, far from the countries Vokalia</p>
+            </div>
+            <div>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.iYsidp6LesFMfM0vpZl_kAHaFj&pid=Api&P=0&w=200&h=150" alt="">
+                <h2>Creative Design</h2>
+                <p>far far away,behind the word mountains, far from the countries Vokalia</p>
+            </div>
+            <div>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.iYsidp6LesFMfM0vpZl_kAHaFj&pid=Api&P=0&w=200&h=150" alt="">
+                <h2>Creative Design</h2>
+                <p>far far away,behind the word mountains, far from the countries Vokalia</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
