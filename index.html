@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        #form>input {
+            margin: 0px 0px 20px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Payment Gateway</h1>
+    <div id="container">
+        <form id="form">
+            <label for="userName">Cardholder Name</label>
+            <input type="text" name="userName" id="userName" placeholder="Enter name">
+            <label for="cardNumber">Card Number</label>
+            <input type="number" name="cardNumber" id="cardNumber" placeholder="Enter card number">
+            <label for="expirationDate">Expiration Year:</label>
+            <input type="text" name="expirationDate" id="expirationDate" placeholder="Enter year of experiation">
+            <label for="cvNumber">CVV:</label>
+            <input type="number" name="cvNumber" id="cvNumber" placeholder="Enter 4 digit CV number">
+            <input type="submit" value="Pay Now">
+        </form>
+    </div>
+</body>
+<script>
+    document.querySelector("form").addEventListener("submit", function(){
+        event.preventDefault();
+       
+        var cardNumber = document.querySelector("#cardNumber").value;
+        var expirationYear = document.querySelector("#expirationDate").value;
+        var cvNumber = document.querySelector("#cvNumber").value;
+        if(cardNumber.length == 16 && expirationYear > 2022 && cvNumber.length == 4){
+             alert("Payment Successful");
+        }else{
+             alert("Enter correct details");
+        }
+    });
+
+    
+</script>
+
+</html>
